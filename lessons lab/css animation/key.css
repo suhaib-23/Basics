@@ -1,0 +1,92 @@
+html ,body{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+.gras ,.road ,.sky{
+    position: relative;
+}
+.sky{
+    position: relative;
+    height: 40%;
+    background: skyblue;
+}
+.grass{
+    height: 30%;
+    background: seagreen;
+}
+.road{
+    height: 30%;
+    background: dimgray;
+    box-sizing: border-box;
+    border-top: 10px solid gray;
+    width: 100%;
+}
+.line{
+    box-sizing: border-box;
+    border: 5px dashed #fff;
+    height: 0px;
+    width: 100%;
+    position: absolute;
+    top: 45%;
+}
+
+.mario{
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 80px;
+    /* waxa weeye animationka magaciisa si loo isticmaalo animation magaca leh */
+    /* animation-name: drive; */
+    /* wakhtiga uu soconayo animationku */
+    /* animation-duration: 3s; */
+    /* inta jeere uu soconayo animation oo ilaa wligii */
+    /* animation-iteration-count: infinite; */
+    /* halka uu ka bilaabmayo animation ma backwardbaa mise forward mise labada  */
+    /* animation-fill-mode: both;
+    animation-timing-function: linear; */
+    animation: drive 3s both linear infinite , jump 0.5s  1.2s ease ;
+}
+.luigi{
+    position: absolute;
+    top: 75px;
+    left: 0;
+    width: 80px;
+    animation-name: drive;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    /* waa direction uu usoconayo animationku */
+    animation-direction:normal;
+    animation-timing-function: linear;
+}
+@keyframes drive{
+    /* animation halka uu ka bilaabmayo ayadoo tiraa */
+    from{transform: translateX(-20000);}
+    /* iyo halka uu ku dhamanayo */
+    to{transform: translateX(1400px);}
+}
+.cloud{
+    position: absolute;
+}
+.cloud:nth-child(2){
+    width: 200px;
+    top: 90px;
+    opacity: 0.5;
+    animation: wind 80s linear infinite  reverse;
+}
+.cloud:nth-child(1){
+    width: 300px;
+    top: 0;
+    animation: wind 50s linear infinite  reverse;
+}
+@keyframes wind {
+    from{left:-300px}
+    to{left:100%;}
+}
+@keyframes jump {
+    0%{top: -40px }
+    50%{top: -100px}
+    100%{top: -40px}
+}

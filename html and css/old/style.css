@@ -1,0 +1,54 @@
+h1{
+    color: orangered;
+    /* tani waxa ay sheegta familyga ay fartu ka tirsan tahay */
+    font-family: Arial, Helvetica, sans-serif;
+    /* tan waxa weeyi in uu text muujismo sida bold ama bolder ama intuu bold nqo oo tira */
+    font-weight: bolder;
+    /* tan soo socotaa waxay qaabilsan thy line ka halkuu ka marayo kalmada 
+    waxayna u kala qaybsantaa :display: 1.underlined oo ah hoosta line ka mari
+    2.oo ah overline oo ah dhex mari line ka */
+    text-decoration: overline;
+    /* waxa jira oo kale text align oo ah halkeee la dhigaya qoraalaka oo kala ah dhexda,bidixda , iyo midigta */
+    text-align: center;
+}
+p{
+    /* waxa ay sheegaysaa space u kala dhaxeeya labada line  */
+    line-height: 20px;
+    /* tan waxa weeye kalmada space u kala dhaxeeya */
+    letter-spacing: 2px;
+    /* inta coloum ee uu ukala qayb samayo qoraalku */
+    column-count: 3;
+    /* space u kala dhaxaynaya columns */
+    column-gap: 40px;
+
+}
+ul{
+    /* dibada cabirka uu ka noqonayo */
+    /* block element waxa uu yeelan karaa :same margin and padding
+       inline element waxa uu yeelanayaa margin kaliya left and right lakiin waxba iskama badalyaan padding  */
+    margin: 4px;
+    /* gudaha inta uu ka noqonayo */
+    padding: 8px;
+    /* usoo bandhi sidii waxa ka ku siman oo dhani line aya la mid noqdaan */
+    display: block;
+    /*  usoo bandhig sidii waxa line ka la siman ayna la mid noqon*/
+    display: inline;
+    /* border ayaa loo samaynayaa list ayna raacsan  yhiin xadiga uu leegyahay 
+    borders waxa ay u kala baxaan 
+    1. border-buttom - hoosta line maraya
+    2.border- left - ka bidixda maraya */
+    border-width: 4px;
+    /* waxa weeye line aynu sumaynano sida uu noqonayo waxa ay u akala baxaan :
+    1.solid - oo ah line dhmayastiran ku samee
+    2.dhashed - dhibco qaan gaadha 
+    3.dottis - dhibco dhibco ka dhig */
+    border-style: solid;
+
+}
+li{
+    /* waxa calamada list la hor dhigayo sidee ayaa ay noqonayaan */
+    list-style-type: circle;
+
+}
+
+

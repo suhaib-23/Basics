@@ -1,0 +1,86 @@
+*{
+    margin: 0%;
+}
+body{
+    background: #eee;
+}
+/* flex waxa uu qabta sida waxan la rabo laysku barbar dhigo
+waxana loo isticmaala navigation box iyo wixii la mid ah */
+.wrapper{
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+}
+/* flex-wrap waxa ay qabanaysaa marka aad uu gaadho xadigii uu min-width
+waxa uu ku samaynayaa in uu is hoos dhigo  waxa aanu leeyahay laba 
+properties oo kala ah
+1.wrap oo ah sida ay u yaalaan u kala horeysii 
+2.wrap-reverse oo ah sida ay u yaalan kala rog ama ka u horeya
+u danbeysii */
+ .flex-container{
+    /* display: flex; */
+    background: #fff ;
+    /* flex-wrap: wrap; */
+    
+ }
+ /* flex-grow waxa uu qabta sida loogu kala baladhiyo waxaad 
+  haysato adoo eegaya spaceka aad hysato , waxa aad ku isticmaali kartaa 
+  element aad flex ku samanayso ama ka guud ee ay ku dhex jiraanba*/
+ .box{
+   flex-flow: row;
+    /* height: 100px; */
+    /* min-width: 100px; */
+    /* flex-grow: 1; */
+ }
+ /* flex-shrink waxa uu ka soo horjeeda flex-grow waxaanu yaraynayaa
+ widthka element marka loo yareeyo browserka kana adoo ku xisaabramaya widht
+ haysta*/
+ .one{
+    background: red;
+    /* flex-shrink: 1; */
+ }
+ /*flex property gani uu ku qabanaya shaqada flex-grow, flex-shrink,
+ iyo shaqada flex-basis oo isku dhan mar kaliya waxanay numberada u kala leeyihiin
+ 1.numberka koobad:flex-grow
+ 2.numberka labaad:flex-shrink
+ 3.numberka saddexaad:flex-basis
+
+ hadii aad hal qiimo siiso waxa uu samaynayaa qiimahas waxa qadanaya
+ flex-grow/shrink ka kalana 0 ayuu qadanaya si defualt ah
+
+
+
+ /* flex-basis waxa uu u dhaqma sida min-width waxa aanu kaga duwan yahay
+ inuu marka la yareeyo intuu width gaadhayay waxa uu samaynayaa 
+ sida uu width yahay uu ahaado macal hadii la yareeyo screen
+ min-width waxa uu sameeya hadii uu width yarado in uu scroll uu samaysto  */
+
+
+
+
+ /* waxa axis oo saameynta dhararka waxana jira laba axis oo kala cross-axis iyo main-axis hadaba sida ay ukala 
+ leeyihiin coloum iyo row aan eegno
+ 1.Row : -->Main-axis :waa dhanka midigta ayuu u socdaa -->Cross-axis :waa dhanka hoose ayuu u socdaa xariiqdiisu
+ 2.Coloum: -->Main-axis :waa dhanka hoose ayuu u socdaa -->Cross-axis :waa dhanka midig ayuu u socdaa
+ 
+ justify-content waxa uu saameya main-axis
+ Align-item waxa uu saameya cross-axis*/
+ .two{
+    background: blue;
+    /* flex-basis: 500px; */
+ }
+ .three{
+    background: green;
+ }
+ /* marka oderka la joogo waxa weeye in uu siday u yaalan sida ka soo horjeeda uu ka dhigo
+ marka tiradu waxa ay noqonaysaa lumberka uugu weyni sida (box4) oo koonaha shishe xiga 
+ waxa uu qadanayaa tirada uu yar sida(0 ama 1) halka (box1)uu qadanyo tirada uugu badan  */
+ .one{order: 0;}
+ .two{order: 0;}
+ .three{order: 0;}
+ /* mwasurements of css:
+ 1.px ---> waa absolute oo caadi ayaa u isticmaali karaysaa
+ 2.em ---> waa relative oo heritance ayuu ku xidhan yahay hadii parent uu noqdo 16px uu child noqdo
+ 3em waxay la mid tahay parent oo 16 haysta ku dhufo 3 child ah(16x3)
+ 3.% ---> waa relative oo tana heritance ayay ku xidhan tahay hadii uu parent noqdo 16px uu child
+ noqdo 50% waxa weeye 16 laba u kala jabi kadibna badh soo muuji(16/2) */

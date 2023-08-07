@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        /* .container{
+            body{
+            background-image: url('/images/Gollis_University_Logo.svg.png');
+            background-size: cover;
+            background-position: center;
+            backdrop-filter: blur(16px);
+        */
+        .nav{
+            display: grid;
+            grid-template-columns: 6fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            background-color: steelblue;
+            color: black;
+            padding: 20px;
+            margin-top: 14px;
+            /* margin: 20px; */
+            margin-right: 0%;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            /* font-weight: bold; */
+            font-size: 15px;
+            font-weight: lighter;
+            line-height: 20px;
+            
+        }
+        .nav .tittle{
+            font-size: 30px;
+            font-weight: bold;
+        }
+         h2{
+            text-align: center;
+            margin-top: 5px;
+            padding: 20px;
+        }
+        .hero {
+            text-align: center;
+            padding: 10px;
+            margin: 20px;
+        }
+        .hero p{
+            margin: 10px;
+            padding: 5px;
+        }
+        img{
+            justify-items:end;
+            height: 500px;
+            width: 500px;
+            float: right;
+            margin-top: 20px;
+        }
+        label{
+            width: 200px;
+            display: inline-block;
+            text-align: right;
+        }
+        .gender label{
+            width: 90px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- kan waxa weeye ka wax balba aan ku dhex samaynayno -->
+    <div class="container">
+        <div class="nav">
+            <!-- waxa weeye intani navigation bar  -->
+            <div class="tittle">Gollis  University</div>
+            <div>Home</div>
+            <div>About</div>
+            <div>Service</div>
+            <div>Contact</div>
+            <div>Help</div>
+            <div> </div>
+        </div>
+        <h2 >Registration Form</h2>
+        <div class="logo">
+            <img src="/images/Gollis_University_Logo.svg.png" alt="gg">
+        </div>
+        <!-- halkan waxa aynu ku samaynaynaa form registrationka -->
+        <div class="hero">
+            
+            <label for="firstname">FirstName :</label>
+            <input type="text" id="firstname"> <br><br>
+            <label for="lastname">LastName  :</label>
+            <input type="text" id="lastname"> <br><br>
+            <label for="country">Country :</label>
+            <input type="text" id="country"> <br><br>
+            <label for="city">City :</label>
+            <input type="text" id="city"> <br><br>
+            <!-- <div class="gender">
+                <label >Gender :</label>
+                <input type="radio" name="gender" id="gender" value="Male">
+                <label for="gender">Male</label>
+                <input type="radio"name="gender" id="gender" value="female">
+                <label for="gender">Female</label>
+            </div> -->
+            <!-- <br><br> -->
+            <label for="email">Email :</label>
+            <input type="email"  id="email" required><br><br>
+            <label for="phone">Phone Number :</label>
+            <input type="tel"  id="phone"><br><br>
+            <label for="username">Creat a Username :</label>
+            <input type="text"  id="user" required><br><br>
+            <label for="password">Create a Password :</label>
+            <input type="password"  id="password" required><br><br>
+            <input type="submit">
+        </div>
+        
+    </div>
+</body>
+</html>

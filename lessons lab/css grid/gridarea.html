@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: #fff;
+            font-family: 'Nunito semibold';
+            text-align: center;
+        }
+        /* waxa weeye sida fudud oo aad column iyo rows aad ugu dhex dhigi lahayd box kaaga adigoo isticmaalaya marka 
+        boxyada magacooga inaad ku dhex samayso grid-area = magaca aad u bixinayso kadibna meesha guud ee waxaad 
+        isticmaalaysa grid-template-areas ad kadibna semi-colon aad furnaysaa adigoo maanka ku haynaya inta coloum eed ka dhigtay 
+        kadibna sidan u qor ---> magaca box iyo coloumnda inta uu ka qabsanayo ex:(4 coloum)"header header header header"
+        labana waad isku dhex galin kartaa ex:"nav nav main main" */
+        #content{
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                grid-auto-rows: minmax(100px , auto);
+                grid-gap: 10px;
+                max-width: 960px;
+                margin: 0 auto;
+                grid-template-areas: 
+                "header header header header"
+                "footer footer footer footer"
+                "main main main main"
+                "main main main main"
+                "aside aside nav nav"
+                "section section section section"
+                "section section section section"
+
+            ;
+            }
+        
+        @media screen and (min-width: 760px) {
+            #content{
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                grid-auto-rows: minmax(100px , auto);
+                grid-gap: 10px;
+                max-width: 960px;
+                margin: 0 auto;
+                grid-template-areas: 
+                "header header header header"
+                "aside aside main main"
+                "nav nav main main"
+                "section section section section "
+                "section section section section "
+                "footer footer footer footer"
+                 ;
+                }
+        }
+        
+        #content > *{
+            background: #2bbced;
+            padding: 30px;
+        }
+        header{
+            grid-area: header;
+        }
+        main{
+            grid-area: main;
+        }
+        section{
+            grid-area: section;
+        }
+        aside{
+            grid-area: aside;
+        }
+        nav{
+            grid-area: nav;
+        }
+        footer{
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <header>header</header>
+        <main>main</main>
+        <section>section</section>
+        <aside>aside</aside>
+        <nav>navi</nav>
+        <footer>footer</footer>
+    </div>
+</body>
+</html>

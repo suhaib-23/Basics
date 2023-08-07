@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        *{
+    margin: 0%;
+    padding: 0%;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: montserrat;
+    background-color:white;
+}
+        nav{
+    background: darkblue;
+    height: 90px;
+    width: 100%;
+    margin-top: 10px;
+}
+.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+}
+nav ul{
+    float: right;
+    margin-right: 40px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    margin-right: 20px;
+}
+nav ul li a{
+    color: white;
+}
+form{
+    text-align: center;
+    background-color: white;
+}
+form select {
+ width: 1100px;
+ height: 30px;
+ background-color: lightgray;
+ margin: 5px;
+}
+form input{
+    width: 1100px;
+ height: 30px;
+ background-color: lightgray;
+ margin: 5px;
+}
+form label{
+    margin: 30px;
+    padding: 30px;
+}
+
+form h2{
+    margin: 15px;
+    color: darkblue;
+}
+form hr{
+    margin-left: 108px;
+    width: 1100px;
+    justify-items: center;
+}
+button{
+    margin: 40px ;
+    height: 40px;
+    width: 90px;
+    background-color: darkblue;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <nav>
+    <label class="logo">DesignX</label>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Help</a></li>
+    </ul>
+   </nav>
+   <form>
+    <h2>Attendance Filter</h2>
+    <br><br>
+    <hr>
+    <br><br>
+    <label for="first">Select Subject*</label>
+    <select  id="first">
+        <option>    </option>
+        <option>IT</option>
+        <option>Software Engineering</option>
+        <option>Computer Science</option>
+    </select>
+    <br><br>
+    <label for="second">Select Shift*</label>
+    <select id="second">
+        <option>    </option>
+        <option> Morning</option>
+        <option> Afternoon</option>
+        <option> Evening</option>
+    </select>
+    <br><br>
+    <label for="third">Select Academic Year*</label>
+    <select  id="third">
+        <option>    </option>
+        <option>2020-2021</option>
+        <option>2021-2022</option>
+        <option>2022-2023</option>
+    </select>
+    <br><br>
+    <label for="fourth">Select Credit Hours*</label>
+    <select id="fourth">
+        <option>    </option>
+        <option> 1</option>
+        <option> 2</option>
+        <option> 3</option>
+    </select>
+    <br><br>
+    <label for="fivith">Select Attendance Date*</label>
+    <input type="date" id="fivith">
+    <br><br>
+    <button>Submit</button>
+   </form>
+   
+</body>
+</html>

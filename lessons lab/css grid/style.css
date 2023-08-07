@@ -1,0 +1,30 @@
+body{
+    color: #fff;
+    font-family: 'Nunito semibold';
+    text-align: center;
+}
+#content{
+    display: grid;
+
+    /*waxaad isticmaalysa markaad is barbardhigayso  */
+
+    /* grid-template-columns: 30% 20% 50%; */
+    /* grid-template-columns: 1fr 2fr 3fr; */
+
+    /* tan waxaad isticmaalaysa markaad wax badan aad qiimo siinayso */
+    grid-template-columns: repeat(3, 1fr);
+    /* waxa weeye inaad size gooniya siiso adoo isticmaalaya minmax oo qiimaha hore u tagan yahay minimum ka danbana maximum */
+    grid-auto-rows: minmax(200px ,auto);
+    /* ta sare waa gabka u dhexeya coloums ka dnbana rows */
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+#content div{
+    background: #2bbced;
+    padding: 30px;
+}
+#content div:nth-child(even){
+    background: #777;
+}

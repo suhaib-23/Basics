@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project one</title>
+    <style>
+        .part{
+            background-color: lightskyblue;
+            color: black;
+            text-align: center;
+            margin-top: 20px;
+            font-family: arial;
+            font-style: italic;
+            font-weight: bold;
+        }
+        .senter{
+            display:grid;
+            grid-template-columns: 6fr 6fr;
+        }
+        .sawiro{
+            background-color: aquamarine;
+            display: grid;
+            grid-template-columns: 4fr 4fr 4fr;
+        }
+    </style>
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+</head>
+<body>
+    <div class="part">
+        Happy to Shopping
+        <span class="bi bi-cart-plus"></span>
+    </div>
+    <div class="senter">
+        <div>
+            <img src="/images/banner.png" height="500" width="500">
+        </div>
+        <div>
+            <form>
+                <h2>Registration Form</h2>
+                <dl>
+                    <dt>Name</dt>
+                    <dd class="form-control"> <input type="text"> </dd>
+                    <dt>Password</dt>
+                    <dd class="form-control"> <input type="password"> </dd>
+                    <dt>Age</dt>
+                    <dd class="form-control"> <input type="number"> </dd>
+                    <dt>Email</dt>
+                    <dd class="form-control"> <input type="email" ></dd>
+                    <dt>Date</dt>
+                    <dd class="form-control"> <input type="date"> </dd>
+                    <dt>Gender</dt>
+                    <dd class="form-control"> <input type="radio" name="dd"> </dd>
+                    <dd class="form-control"> <input type="radio" name="dd"> </dd>
+                    <dt>City</dt>
+                    <select class="form-check w-50">
+                        -----Choose a city----
+                        <option>HRG</option>
+                        <option>BRO</option>
+                        <option>MGO</option>
+                    </select>
+                </dl>
+                <button class="btn btn-warning w-100">Register</button>
+            </form>
+        </div>
+    </div>
+    <div class="sawiro">
+        <img src="/images/thumb-1.png">
+        <img src="/images/thumb-2.png">
+        <img src="/images/5087579.png">
+    </div>
+</body>
+</html>

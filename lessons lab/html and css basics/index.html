@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <!-- <img src="/images/logo.png" alt="ss"> -->
+    </header>
+    <form action="">
+        <!--Gender -->
+        <p>You are a...</p>
+        <input type="radio" name="gender" id="male"><label for="male">Male</label> <br>
+        <input type="radio" name="gender" id="female"><label for="female">Female</label>
+
+        <!-- Interest -->
+        <p>Who Interested in a...</p>
+        <input type="checkbox" id="web"><label for="web">Web Development</label><br>
+        <input type="checkbox" id="photoshop"><label for="photoshop">Photoshop</label><br>
+        <input type="checkbox" id="network"><label for="network">Network ++</label>
+
+        <!-- contect detail -->
+        <fieldset>
+            <legend>Contect Info</legend>
+            <input type="email" placeholder="Email" required>
+            <span class="tick"></span>
+            <input type="telephone" placeholder="Phone Number"required>
+            <span class="tick"></span>
+        </fieldset>
+
+        <!-- preferred -->
+        <p>How would like to be contected ?</p>
+        <select>
+            <option>By Email</option>
+            <option>By TelePhone</option>
+        </select>
+        <input type="submit" value="Become A ninja">
+    </form>
+</body>
+</html>

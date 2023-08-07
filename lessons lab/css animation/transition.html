@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        body{
+            background: lightblue;
+            text-align: center;
+        }
+        .wrapper{
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .circle{
+            width: 100px;
+            padding: 50px 0;
+            line-height: 0;
+            margin: 60px auto;
+            background: pink;
+            color: black;
+            border-radius: 50px;
+            cursor: pointer;
+            /* transition: 1s; */
+            /* kani waxa weeye intuu soconayo isbedelka labaad ee aad samaysay ama (hover ) wakhtigiisa hadaad doonto 
+            waad u kala cayimikarysaa sidan hoos ku qoran*/
+            transition: background 1s , transform 0.2s;
+        }
+        .circle:hover {
+            background: salmon;
+            transform: rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <img src="/images/download.png" alt="ggg">
+        <div class="circle">Hover Me</div>
+    </div>
+</body>
+</html>
