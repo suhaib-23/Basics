@@ -1,0 +1,8 @@
+Tail-wind Commands (written in class)
+
+
+1.text-(color name)-(scale 100-900) --->to change color of the text
+
+2.text-(size like shirt eg:2xl,xl,6xl) -->to change font size
+
+3.text-(weight of text eg:bold,semi-bold,light) -->to change font weight
