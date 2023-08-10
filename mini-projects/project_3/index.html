@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/84dcc20fb9.js"
+    crossorigin="anonymous"></script>
+</head>
+<body class="body">
+   <div class="back"></div>
+   <div class="login">
+        <div class="h-text">
+            <div class="h-animated">
+                <span class="text first-text">I am a&nbsp;</span>
+                <span class="text sec-text">Developer</span>
+            </div>
+        </div>
+   </div>
+   <script>
+    const text = document.querySelector(".sec-text");
+    const textLoad =() => {
+        setTimeout(() =>{
+            text.textContent = "Developer"; 
+        } ,0);
+        setTimeout(() =>{
+            text.textContent = "Programmer"
+        }, 4000)
+    }
+    textLoad();
+    setInterval(textLoad ,4000);
+
+   </script>
+</body>
+</html>

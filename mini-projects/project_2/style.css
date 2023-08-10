@@ -1,0 +1,47 @@
+
+.box{
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    margin-top: 300px;
+}
+
+.box1{
+    background: rgb(243, 146, 146);
+}
+.box2{
+    background: rgb(133, 235, 241);
+}
+.box3{
+    background: rgb(129, 150, 68);
+}
+.box1{
+    margin: 5px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    animation: jump 1s  ease-in-out infinite;
+}
+.box2{
+    margin: 5px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    animation: jump 1s 13s ease-in-out infinite;
+}
+.box3{
+    margin: 5px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    animation: jump 1s 15s ease-in-out infinite;
+}
+@keyframes jump {
+    0%,
+    100%{
+        transform: translateY(30px);
+    }
+    50%{
+        transform: translateY(-30px);
+    }
+}

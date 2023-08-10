@@ -6,3 +6,14 @@ Tail-wind Commands (written in class)
 2.text-(size like shirt eg:2xl,xl,6xl) -->to change font size
 
 3.text-(weight of text eg:bold,semi-bold,light) -->to change font weight
+
+4.p-2 --> padding 
+
+5.py -->padding of bottom and top + the number
+
+6.px -->padding of right left
+
+7.pr --> paading of right   pb -->padding of buttom   pl --> padding of left   pt -->padding of top
+
+
+
