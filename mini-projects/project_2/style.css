@@ -34,7 +34,7 @@
     height: 70px;
     width: 70px;
     border-radius: 50%;
-    animation: jump 1s 15s ease-in-out infinite;
+    animation: jump 1s 14s ease-in-out infinite;
 }
 @keyframes jump {
     0%,

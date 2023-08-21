@@ -1,0 +1,9 @@
+
+color
+background color -- #faf8f4
+color  -- #78787c
+
+
+gradient
+for background -- linear-gradient(to right ,#bdb1c5,#ddd7d0)
+for btn  -- linear-gradient(to right ,#525252,#101010)
