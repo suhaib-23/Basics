@@ -11,19 +11,31 @@ body,html{
 }
 nav{
     display: flex;
-    background: #6C7A89;
+    /* background: #6C7A89; */
     justify-content: space-between;
     padding: 20px;
-    margin-top: 15px;
+    backdrop-filter: blur(30px);
+    /*  */
 
 }
 body{
     background: #E0E7E9;
 }
+header{
+    max-width: 3400px;
+    min-height: 1000px;
+    background-image: url(./img/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    
+}
 .logo{
     display: flex;
     justify-content: space-between;
     margin-left: 20px;
+    
 }
 .logo .content h2{
     margin: 10px;
@@ -56,6 +68,7 @@ ul{
 }
 ul li{
    display: flex;  
+   cursor:pointer;
 }
 ul li:hover{
     border-bottom:5px solid #E0E7E9;
